@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import CenteredTextOnlyHero from "$lib/components/layout/hero-sections/CenteredTextOnlyHero.svelte";
+	
+	// Icons
+	import IconBrain from "~icons/lucide/brain";
+	import IconEye from "~icons/lucide/eye";
+	import IconTarget from "~icons/lucide/target";
+	import IconZap from "~icons/lucide/zap";
+	import IconShield from "~icons/lucide/shield";
+	import IconLink from "~icons/lucide/link";
 </script>
 
 <CenteredTextOnlyHero
@@ -25,60 +33,72 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="We've created the first truly helpful wearable assistant that understands when to speak and when to stay quiet. Our smart glasses listen to your world and deliver perfectly timed insights—whether you're closing a deal, cooking dinner, or studying for an exam. Unlike other AI assistants that interrupt constantly, ours only speaks when it can genuinely help you succeed."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Marcus Chen",
+			position: "Senior Sales Executive",
+			company: "CloudTech Solutions",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"The glasses saved me 2 hours daily by instantly providing client context and objection responses during meetings.\nMy close rate jumped 40% in the first month—ROI paid for itself in just 3 weeks.",
+			image: "/generated/image-professional-headshot-of-marcus-chen-asi.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Isabella Rodriguez",
+			position: "Executive Chef",
+			company: "Artisan Kitchen",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"No more ruined dishes from missed timing or forgotten ingredients.\nThe cooking coach mode cut my prep mistakes by 80% and helped me nail complex techniques I'd never attempted before.",
+			image: "/generated/image-professional-headshot-of-isabella-rodrig.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "David Thompson",
+			position: "Home Renovation Specialist",
+			company: "Thompson Builds",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"The DIY helper mode eliminated costly measurement errors and material waste.\nSaved over $3,000 on my last project and finished 3 days ahead of schedule with perfect precision.",
+			image: "/generated/image-professional-headshot-of-david-thompson-.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Always-on intelligence"
+	subtitle="The right insight at the perfect moment, without the noise"
 	features={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+			title: "Smart abstain logic",
+			description: "Only speaks when truly helpful, filtering out 95% of irrelevant moments. Your glasses stay quiet during private conversations and mundane tasks, activating precisely when you need support most.",
+			icon: IconBrain
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+			title: "Context-aware assistance",
+			description: "Combines what you see and hear to deliver perfectly timed insights. From sales objection responses to cooking measurements, every suggestion is tailored to your exact situation.",
+			icon: IconEye
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+			title: "Personalized modes",
+			description: "Switch between Sales Assist, Cooking Coach, DIY Helper, and Social Coach modes. Each mode understands your goals and delivers relevant prompts that actually help you succeed.",
+			icon: IconTarget
+		},
+		{
+			title: "Lightning-fast processing",
+			description: "Text micro-loops run every 1-2 seconds for instant responses. Vision processing activates on-demand, ensuring you get real-time help without battery drain or delays.",
+			icon: IconZap
+		},
+		{
+			title: "Privacy-first design",
+			description: "Speaker identification keeps conversations confidential, with red-zone policies that respect private moments. Your data stays secure while you stay informed.",
+			icon: IconShield
+		},
+		{
+			title: "Seamless integration",
+			description: "Works with your existing Ray-Ban Meta or compatible smart glasses. No new hardware required—just download the app and transform your glasses into an intelligent assistant.",
+			icon: IconLink
 		}
 	]}
 />
